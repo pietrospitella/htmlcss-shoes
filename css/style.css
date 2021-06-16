@@ -2,9 +2,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+/* common */
 
 body {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* / common */
+
+/* menu */
+
+.menu{
+    position: fixed;
+    z-index: 1;
+}
+
+.boxes-cont {
+    position: relative;
+
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    margin: 40px;
+
+}
+
+nav li {
+    display: inline;
+}
+
+nav li:hover {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+/* / menu */
+
+/* boxes' container */
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper h1 {
+    font-size: 50px;
+}
+
+#red {
+  background-color: red;  
+}
+
+#green {
+    background-color: green;  
+}
+
+#red, #green {
+    color: yellow;
+}
+
+#yellow {
+    background-color: yellow;
+    color: green;  
+}
+
+/* boxes' container */
